@@ -13,12 +13,12 @@
 # limitations under the License.
 
 #pure nexus versioning
-ifndef PURENEXUS_BUILD_TYPE
-    PURENEXUS_BUILD_TYPE := HOMEMADE
+ifndef EXOUSIA_BUILD_TYPE
+    EXOUSIA_BUILD_TYPE := HOMEMADE
 endif
 
-NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(PURENEXUS_BUILD_TYPE)
+NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(EXOUSIA_BUILD_TYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.purenexus.version=$(NEXUS_VERSION)
+    ro.exousia.version=$(EXOUSIA_VERSION)
 

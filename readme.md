@@ -1,1 +1,0 @@
-PureNexus Project Vendor

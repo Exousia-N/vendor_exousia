@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include Pure Nexus telephony configuration
-include vendor/nexus/configs/nexus_phone.mk
+# Include Exousia telephony configuration
+include vendor/exousia/configs/exousia_phone.mk
 
 # Inherit AOSP device configuration for angler
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := nexus_angler
+PRODUCT_NAME := exousia_angler
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := angler
 PRODUCT_MODEL := Nexus 6P

@@ -14,17 +14,17 @@
 
 # init.d script support
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
+    vendor/exousia/prebuilt/bin/sysinit:system/bin/sysinit
 
-# PureNexus-specific init file
+# Exousia-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
+    vendor/exousia/prebuilt/etc/init.exousia.rc:root/init.exousia.rc
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/nexus/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/nexus/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/exousia/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/exousia/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/exousia/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
 
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
