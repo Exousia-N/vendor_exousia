@@ -14,10 +14,10 @@
 
 #pure nexus versioning
 ifndef EXOUSIA_BUILD_TYPE
-    EXOUSIA_BUILD_TYPE := HOMEMADE
+    EXOUSIA_BUILD_TYPE := DEV
 endif
 
-NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(EXOUSIA_BUILD_TYPE)
+EXOUSIA_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(EXOUSIA_BUILD_TYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.exousia.version=$(EXOUSIA_VERSION)
